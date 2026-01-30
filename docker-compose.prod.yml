@@ -1,0 +1,9 @@
+services:
+  node-app:
+    container_name: express-node-app-container
+    command: npm run start
+    environment:
+      - NODE_ENV=production
+    build: 
+      context: .
+      target: production

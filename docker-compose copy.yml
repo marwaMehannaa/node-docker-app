@@ -1,0 +1,12 @@
+version: '5.0.1'
+services:
+  node-app:
+    container_name: express-node-app-container
+    build: .
+    volumes:
+      - ./:/dest:ro
+    ports:
+      - "4000:4000"
+    command: npm run start-dev
+    env_file:
+      - ./.env
