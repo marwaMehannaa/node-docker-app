@@ -3,6 +3,7 @@ services:
     container_name: express-node-app-dev-container
     volumes:
       - ./:/dest:ro
+      - /dest/node_modules
     command: npm run start-dev
     environment:
       - NODE_ENV=dev
