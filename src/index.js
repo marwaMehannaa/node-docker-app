@@ -27,7 +27,7 @@ redisClient.on("error", (err) => console.log("Redis Client Error", err))
 
 app.get('/', (req, res) => {
   redisClient.set('keyByMarwa', 'Value from Redis By Marwa');
-  res.send('Hello World! Hii agaain updated by Marwa Mehanna 1  ffrom dev branch');
+  res.send('Hello World! Hii agaain updated by Marwa Mehanna 1  from dev branch to AWS');
 });
 
 app.get('/data', async(req, res) => {
