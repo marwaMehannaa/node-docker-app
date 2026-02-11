@@ -45,7 +45,7 @@ services:
     image: nginx:latest
     container_name: nginx-by-marwa
     ports:
-      - "8080:80"
+      - "80:80"
     depends_on:
       - node-app
     volumes:
